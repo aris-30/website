@@ -31,26 +31,26 @@
         0% { background-position: 0% }
         100% { background-position: 400% }
       }
+      
+      .main-button {
+        font-size: 60px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+        background-size: 400%;
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: rainbow 5s linear infinite;
+}
+
+
     </style>
   </head>
   <body>
-    <button 
-      style="
-        padding: 12px 24px;
-        font-size: 18px;
-        background-color: black;
-        color: white;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-      "
-    onclick="window.location.href='/home'"
->
-  Enter Home Page
-</button>
-
     <div class="center">
-      <h1 style="font-size: 60px;">This is main</h1>
+      <button class="main-button" onclick="window.location.href='/home'">This is main</button>
+
     </div>
   </body>
 </html>
